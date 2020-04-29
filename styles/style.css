@@ -1,0 +1,512 @@
+/* Import CSS Reset */
+@import "reset.css";
+
+
+/* General Styles*/
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+/* No selecting text*/
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+/* Changing bg color & color for selecting text*/
+::selection {
+    background: #1A237E;
+    /* WebKit/Blink Browsers */
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #1A237E;
+    /* Gecko Browsers */
+    color: #fff;
+}
+
+/* Changing input placeholder color*/
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #004D40;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #004D40;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #004D40;
+}
+
+
+/* Removing blue border from input forms*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* Navigation Styles*/
+
+#nav {
+    background: #004D40;
+    padding: 13px;
+}
+
+
+#nav .left-nav {
+    float: left;
+}
+
+#nav .right-nav {
+    float: right;
+}
+
+#nav ul li a {
+    color: #b29700;
+    padding: 3px 6px;
+}
+
+#nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline #b29700;
+    cursor: pointer;
+
+}
+
+#nav .open-menu {
+    display: none;
+    color: #b29700;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#nav .open-menu:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Header Styles*/
+
+#header {
+    margin: 10px auto;
+}
+
+#header .logo {
+    float: left;
+}
+
+#header .logo img {
+    width: 150px;
+}
+
+#header .search-box {
+    float: right;
+    margin-top: 35px;
+}
+
+#header input {
+    padding: 10px 80px 10px 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    background: #f0e4a1;
+    font-size: 15px;
+    color: #004D40;
+}
+
+#header button {
+    background-color: #004D40;
+    border: none;
+    color: #b29700;
+    font-size: 18px;
+    border-radius: 0 5px 5px 0;
+    padding: 8px;
+    position: relative;
+    left: -6px;
+}
+
+#header button:hover {
+    background: #4ec7bb;
+    cursor: pointer;
+}
+
+
+/* Slider Style*/
+#slider img {
+    width: 100%;
+    height: 400px;
+}
+
+/* Services Style */
+#services {
+    text-align: center;
+    background: #8df2e8;
+}
+
+
+#services .services ul li {
+    display: inline-block;
+    background-color: #f0e4a1;
+    width: 20%;
+    margin: 15px 15px;
+    padding: 10px;
+    color: #b29700;
+    border-radius: 5px;
+    text-align: left;
+    transition: 0.5s;
+    -webket-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#services .services h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#services .services p {
+    font-size: 11px;
+    margin-top: 5px;
+    color: #706f6f;
+}
+
+#services .services svg {
+    font-size: 45px;
+    float: left;
+    padding-right: 5px;
+}
+
+#services .services ul li:hover {
+    background-color: #e0cd63;
+    color: #b29700;
+
+}
+
+
+/* Products Navigation*/
+.products-section {
+    margin-top: 30px;
+}
+
+.products-section .products-nav {
+    background: #8df2e8;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0px 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #b29700;
+    font-size: 20px;
+}
+
+.products-section .products-nav ul li {
+    padding: 10px 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.products-section .products-nav ul li a {
+    color: #b29700;
+}
+
+.products-section .products-nav ul li.active {
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.products-section .products-nav ul li.active a {
+    color: #706f6f;
+}
+
+.products-section .products {
+    text-align: center;
+}
+
+.products-section .product-item {
+    background: #f0f0f0;
+    width: 23.5%;
+    margin: 5px;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+.products-section .product-item img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.products-section .product-item .pro-title {
+    padding: 5px 0;
+}
+
+.products-section .product-item .pro-price-new {
+    font-size: 15px;
+    color: green;
+}
+
+.products-section .product-item .pro-price-old {
+    font-size: 13px;
+    color: red;
+    text-decoration: line-through;
+}
+
+.products-section .product-item .add-to-cart {
+    padding: 10px 0;
+    margin: 10px 0;
+    background: yellow;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.25s;
+    -webket-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+}
+
+.products-section .product-item .add-to-cart svg {
+    padding-right: 5px;
+}
+
+.products-section .product-item .add-to-cart:hover {
+    background: orange;
+    cursor: pointer;
+}
+
+
+/* Social Media Styles */
+#social-media {
+    background: #f0f0f0;
+    margin: 20px 0;
+}
+
+#social-media .container {
+    padding: 10px;
+    box-sizing: content-box;
+    line-height: 25px;
+}
+
+#social-media .container .social-title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#social-media .container .social-icon {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+
+}
+
+#social-media .container .social-icon a {
+    color: gray;
+}
+
+#social-media .container .social-icon a:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+
+#social-media .container .social-icon ul li {
+    padding-right: 20px;
+    color: #000;
+
+}
+
+/* Selection Products */
+
+
+
+
+/* Newsletter */
+
+#newsletter {
+    background: #f0f0f0;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#newsletter h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#newsletter h3 {
+    font-size: 13px;
+    padding: 20px 0 15px 0;
+}
+
+
+#newsletter input {
+    background: #000;
+    width: 300px;
+    font-size: 14px;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+#newsletter input:focus {
+    opacity: 1;
+}
+
+
+/* Footer Styles */
+#footer {
+    background: #4b4b4b;
+    height: 55px;
+    text-align: center;
+    color: #fff;
+}
+
+#footer h2 {
+    padding: 5px 0;
+}
+
+#footer a {
+    color: #ececec;
+    text-decoration: underline;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+#footer .fa-heart {
+    color: #d52a2a;
+}
+
+#footer .fa-coffee {
+    color: #F9A825;
+}
+
+
+/* Breakpoint for Tablets*/
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    #services .services ul li {
+        width: 22%;
+        margin: 15px 3px;
+        padding: 3px;
+    }
+
+    #services .services h1 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #services .services p {
+        font-size: 8px;
+        color: #000;
+    }
+
+    .products-section .product-item {
+        width: 22.5%;
+    }
+
+
+}
+
+
+/* Breakpoint for Cellphones*/
+@media screen and (max-width: 400px) {
+
+    #nav .left-nav,
+    #nav .right-nav {
+        float: none;
+    }
+
+    #nav ul li {
+        display: block;
+        padding-bottom: 7px;
+        text-align: center;
+
+    }
+
+    #nav .nav {
+        display: none;
+    }
+
+    #nav .open-menu {
+        display: block;
+    }
+
+    #header .logo,
+    #header .search-box {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    #services .services ul li {
+        width: 37%;
+        margin: 4px 3px;
+    }
+
+    .products-section .products-nav {
+        font-size: 15px;
+    }
+
+    .products-section .product-item {
+        width: 46%;
+    }
+
+    .products-section .products-nav ul li.active {
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    #social-media .container {
+        padding: 10px 0;
+    }
+}
